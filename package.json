@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./SCSS/main.scss:./css/style.css --style expanded",
-    "prefix": "postcss ./p3-ohmyfood/css/style.css --use autoprefixer -d ./p3-ohmyfood/css/prefixed/"
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/style.css/prefixed/"
   },
   "author": "",
   "license": "ISC",

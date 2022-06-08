@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -15,6 +25,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: 'Shrikhand', cursive;
   font-size: 45px;
   -webkit-box-shadow: 0px 2px 3px 0PX rgba(203, 202, 202, 0.79);
@@ -33,6 +45,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: Roboto,sans-serif;
   background-color: rgba(228, 221, 221, 0.669);
 }
@@ -55,6 +69,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: Roboto,sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -72,6 +88,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: Roboto,sans-serif;
   font-size: 18px;
   text-align: center;
@@ -79,7 +97,27 @@ body {
   margin-bottom: 25px;
 }
 
-.omf-info a {
+.omf-info__p1 {
+  margin-bottom: 0px;
+}
+
+.omf-info__p2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.omf-info__link {
+  text-decoration: none;
+  color: black;
+}
+
+.omf-info__p-btn {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: whitesmoke;
+}
+
+.omf-info__btn-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,13 +127,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
-  color: black;
-}
-
-.omf-info p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .omf-info__btn {
@@ -108,14 +141,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: Roboto,sans-serif;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 5px;
-  color: white;
+  color: #f9f6f6;
   font-size: large;
   font-weight: 500;
   padding: 15px;
   border-radius: 25px 25px 25px 25px;
   border: none;
   background: linear-gradient(-20deg, #9356DC, #FF79DA 95%);
+  cursor: pointer;
+  margin: 0px;
 }
 /*# sourceMappingURL=main.css.map */
