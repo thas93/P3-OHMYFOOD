@@ -1,0 +1,24 @@
+.step-position {
+    display: flex;
+    align-items: center;
+    grid-gap:20px;
+    background-color: #f8fafae9;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 10px;
+    
+    }
+
+.number {
+    background-color: $color1;
+    color: whitesmoke;
+    border-radius: 25px 25px 25px 25px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;  
+    margin-left: -10px;       
+}
+
+.func-icon{
+color: rgba(164, 163, 163, 0.875);
+}

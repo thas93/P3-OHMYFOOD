@@ -11,7 +11,6 @@
 
     &__location {
         @include center;
-        @include fonts-2;
         background-color: rgba(228, 221, 221, 0.669);
 
     }
@@ -23,9 +22,9 @@
 
 .omf-info {
     padding: 30px;
+    background-color: rgb(253, 248, 248);
     &__info1 {
         @include center;
-        @include fonts-2;
         font-size: 30px;
         font-weight: 700;
         text-align: center;
@@ -33,8 +32,7 @@
     }
 
     &__info2 {
-        @include center;
-        @include fonts-2;
+        @include center;       
         font-size: 18px;
         text-align: center;
         margin-top: 0px;
@@ -62,7 +60,6 @@
 
     &__btn {
         @include center;
-        @include fonts-2;
         @include a;
         flex-direction: row;
         padding: 5px;

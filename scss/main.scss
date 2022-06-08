@@ -3,6 +3,7 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
 @import "./components/_header";
+@import "./Utils/extensions";
 
 *,
 *:before,
@@ -17,10 +18,74 @@
     box-sizing: border-box;
 }
 
-    body {
-        margin: 0px;
-        padding: 0px
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, sans-serif;
+}
+
+main {
+
+    margin-left:20px ;
+    margin-right:20px ;
+}
+
+
+
+
+.omf-func {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+   
+
+    &__p{
+
+        font-size: 30px;
+        font-weight: 700;
     }
 
-   
-        
+    &__step{
+
+        display: flex;
+        flex-direction: column;
+       justify-content: space-between;
+       height: 200px;
+       max-height: 600px;
+    }
+    
+    &__num{
+        @extend .number;
+    }
+    
+    &__icon{
+
+    @extend .func-icon;
+    }
+
+    &__func-p{
+        font-weight: 500;
+
+    }
+    
+    &__select{
+        @extend .step-position;  
+    }
+
+    &__menu{
+        @extend .step-position;
+    }
+
+    &__restaurant{
+        @extend .step-position; 
+    }
+
+  
+
+
+
+
+
+
+}
