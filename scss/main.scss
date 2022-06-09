@@ -50,9 +50,21 @@ main {
 
         display: flex;
         flex-direction: column;
-       justify-content: space-between;
-       height: 200px;
-       max-height: 600px;
+        grid-gap:20px;
+       :hover{
+
+        background-color: pink;
+
+    }
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        grid-gap:20px;
+        
+        
+      
+        
+       }
+       
     }
     
     &__num{
@@ -62,8 +74,12 @@ main {
     &__icon{
 
     @extend .func-icon;
+        &:hover{
+     color: $color1;
+    }
     }
 
+    
     &__func-p{
         font-weight: 500;
 

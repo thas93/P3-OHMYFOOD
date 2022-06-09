@@ -94,9 +94,12 @@
   display: flex;
   align-items: center;
   grid-gap: 20px;
-  background-color: rgba(248, 250, 250, 0.9137254902);
+  background-color: #ffffff;
   border-radius: 15px 15px 15px 15px;
   margin-left: 10px;
+  box-shadow: 0px 10px 10px -7px rgba(159, 155, 155, 0.53);
+  width: 100%;
+  cursor: pointer;
 }
 
 .number, .omf-func__num {
@@ -149,9 +152,19 @@ main {
 .omf-func__step {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
-  max-height: 600px;
+  grid-gap: 20px;
+}
+.omf-func__step :hover {
+  background-color: pink;
+}
+@media screen and (min-width: 992px) {
+  .omf-func__step {
+    flex-direction: row;
+    grid-gap: 20px;
+  }
+}
+.omf-func__icon:hover {
+  color: #9356DC;
 }
 .omf-func__func-p {
   font-weight: 500;

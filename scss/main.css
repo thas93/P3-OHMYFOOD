@@ -157,9 +157,13 @@
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 20px;
-  background-color: #f8fafae9;
+  background-color: #ffffff;
   border-radius: 15px 15px 15px 15px;
   margin-left: 10px;
+  -webkit-box-shadow: 0px 10px 10px -7px rgba(159, 155, 155, 0.53);
+          box-shadow: 0px 10px 10px -7px rgba(159, 155, 155, 0.53);
+  width: 100%;
+  cursor: pointer;
 }
 
 .number, .omf-func__num {
@@ -230,11 +234,25 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 200px;
-  max-height: 600px;
+  grid-gap: 20px;
+}
+
+.omf-func__step :hover {
+  background-color: pink;
+}
+
+@media screen and (min-width: 992px) {
+  .omf-func__step {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    grid-gap: 20px;
+  }
+}
+
+.omf-func__icon:hover {
+  color: #9356DC;
 }
 
 .omf-func__func-p {

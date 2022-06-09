@@ -2,9 +2,13 @@
     display: flex;
     align-items: center;
     grid-gap:20px;
-    background-color: #f8fafae9;
+    background-color: #ffffff;
     border-radius: 15px 15px 15px 15px;
     margin-left: 10px;
+    box-shadow: 0px 10px 10px -7px rgba(159, 155, 155, 0.53);
+    width: 100%;
+    cursor: pointer;
+    
     
     }
 
@@ -21,4 +25,6 @@
 
 .func-icon{
 color: rgba(164, 163, 163, 0.875);
+
+
 }
