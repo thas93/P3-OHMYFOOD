@@ -1,101 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+@import "./Base/general";
 @import "./Utils/variables";
 @import "./Utils/mixins";
-@import "./components/_header";
 @import "./Utils/extensions";
-
-*,
-*:before,
-*:after {
-
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: Roboto, sans-serif;
-}
-
-main {
-
-    margin-left:20px ;
-    margin-right:20px ;
-}
+@import "./components/_header";
+@import "./components/_step";
 
 
 
 
-.omf-func {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   
-   
+
+.omf-rest{
+    background-color: #f9f5f5fd;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 1300px;
+    max-height: 2000px;
+    
 
     &__p{
-
         font-size: 30px;
         font-weight: 700;
+        margin-left: 30px;
     }
 
-    &__step{
-
-        display: flex;
-        flex-direction: column;
-        grid-gap:20px;
-       :hover{
-
-        background-color: pink;
-
-    }
-    @media screen and (min-width: 992px) {
-        flex-direction: row;
-        grid-gap:20px;
-        
-        
+    &__card-section{
+    grid-gap:20px;
       
-        
-       }
-       
-    }
-    
-    &__num{
-        @extend .number;
-    }
-    
-    &__icon{
-
-    @extend .func-icon;
-        &:hover{
-     color: $color1;
-    }
-    }
-
-    
-    &__func-p{
-        font-weight: 500;
-
-    }
-    
-    &__select{
-        @extend .step-position;  
-    }
-
-    &__menu{
-        @extend .step-position;
     }
 
     &__restaurant{
-        @extend .step-position; 
+        @include a;
+        width: 100%;
     }
+
+    &__card{
+       
+        @extend .card;
+    }
+
+   
+
+    &__img{
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 190px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding: 0px;
+        text-align: center;
+        
+
+    }
+
+    &__card-description{
+
+        display: flex;
+        flex-direction:row ;
+    }
+
+    &__card-text{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+        
+        width: 100%;
+
+    }
+
+    &__rest-name{
+       
+        
+        text-decoration: none;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        font-weight: 600;
+
+    }
+    &__rest-loc{
+        text-decoration: none;
+        margin-top: 0px;
+       
+    }
+
+}
+
+
+
 
   
 
@@ -104,4 +102,3 @@ main {
 
 
 
-}

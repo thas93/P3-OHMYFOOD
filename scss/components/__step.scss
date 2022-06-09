@@ -1,0 +1,45 @@
+.omf-func {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left:20px ;
+    margin-right:20px ;
+    &__p{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    &__step{
+        display: flex;
+        flex-direction: column;
+        grid-gap:20px;
+       :hover{
+        background-color: pink;
+    }
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        grid-gap:20px;                              
+       }       
+    }   
+    &__num{
+        @extend .number;
+    }    
+    &__icon{
+    @extend .func-icon;
+        &:hover{
+     color: $color1;
+    }
+    }    
+    &__func-p{
+        font-weight: 500;
+
+    }    
+    &__select{
+        @extend .step-position;  
+    }
+    &__menu{
+        @extend .step-position;
+    }
+    &__restaurant{
+        @extend .step-position; 
+    }
+}

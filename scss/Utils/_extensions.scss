@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     grid-gap:20px;
-    background-color: #ffffff;
+    background-color: #f9f5f5fd;
     border-radius: 15px 15px 15px 15px;
     margin-left: 10px;
     box-shadow: 0px 10px 10px -7px rgba(159, 155, 155, 0.53);
@@ -27,4 +27,14 @@
 color: rgba(164, 163, 163, 0.875);
 
 
+}
+
+.card{
+    border-radius: 25px;
+    background-color: white;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px #00000012;
+    width: 100%;       
 }
