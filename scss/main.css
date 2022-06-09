@@ -277,7 +277,7 @@ body {
   background-color: #f9f5f5fd;
   padding: 25px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   height: 1300px;
   max-height: 2000px;
 }
@@ -351,5 +351,56 @@ body {
 .omf-rest__rest-loc {
   text-decoration: none;
   margin-top: 0px;
+}
+
+.omf-footer {
+  background-color: #3a3939;
+  padding: 25px;
+  color: white;
+  font-size: 15px;
+  grid-gap: 10px;
+}
+
+.omf-footer__logo {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 25px;
+  color: white;
+  margin-left: 25px;
+  margin: 0px;
+}
+
+.omf-footer__set1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 12px;
+}
+
+.omf-footer__set2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 12px;
+}
+
+.omf-footer__textp {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.omf-footer__texta {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  margin: 0px;
 }
 /*# sourceMappingURL=main.css.map */

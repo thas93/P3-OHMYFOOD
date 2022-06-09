@@ -181,7 +181,7 @@ body {
   background-color: rgba(249, 245, 245, 0.9921568627);
   padding: 25px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   height: 1300px;
   max-height: 2000px;
 }
@@ -230,6 +230,44 @@ body {
 .omf-rest__rest-loc {
   text-decoration: none;
   margin-top: 0px;
+}
+
+.omf-footer {
+  background-color: rgb(58, 57, 57);
+  padding: 25px;
+  color: white;
+  font-size: 15px;
+  grid-gap: 10px;
+}
+.omf-footer__logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 25px;
+  color: white;
+  margin-left: 25px;
+  margin: 0px;
+}
+.omf-footer__set1 {
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+}
+.omf-footer__set2 {
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+}
+.omf-footer__textp {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.omf-footer__texta {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

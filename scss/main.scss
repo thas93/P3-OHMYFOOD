@@ -6,91 +6,23 @@
 @import "./Utils/extensions";
 @import "./components/_header";
 @import "./components/_step";
+@import "./components/_restaurant";
+@import "./components/_footer";
 
 
 
 
 
-.omf-rest{
-    background-color: #f9f5f5fd;
-    padding: 25px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 1300px;
-    max-height: 2000px;
-    
 
-    &__p{
-        font-size: 30px;
-        font-weight: 700;
-        margin-left: 30px;
-    }
 
-    &__card-section{
-    grid-gap:20px;
-      
-    }
 
-    &__restaurant{
-        @include a;
-        width: 100%;
-    }
 
-    &__card{
-       
-        @extend .card;
-    }
 
-   
 
-    &__img{
-        display: flex;
-        justify-content: center;
-        object-fit: cover;
-        width: 100%;
-        max-width: 100%;
-        height: 190px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        padding: 0px;
-        text-align: center;
-        
 
-    }
 
-    &__card-description{
 
-        display: flex;
-        flex-direction:row ;
-    }
 
-    &__card-text{
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px;
-        
-        width: 100%;
-
-    }
-
-    &__rest-name{
-       
-        
-        text-decoration: none;
-        margin-bottom: 10px;
-        margin-top: 0px;
-        font-weight: 600;
-
-    }
-    &__rest-loc{
-        text-decoration: none;
-        margin-top: 0px;
-       
-    }
-
-}
 
 
 
