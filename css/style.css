@@ -56,6 +56,11 @@ body {
   width: 100%;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 992px) {
+  .card, .omf-rest__card {
+    width: 910px;
+  }
+}
 
 .omf-nav__logo {
   display: flex;
@@ -220,9 +225,33 @@ body {
     width: 100%;
   }
 }
+@media screen and (min-width: 992px) {
+  .omf-rest__card-div {
+    width: 140%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.omf-rest__badge {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 20px 7px 20px;
+  border-radius: 5px;
+}
+.omf-rest__badge-p {
+  margin: 0px;
+}
 .omf-rest__restaurant {
   text-decoration: none;
   color: black;
+}
+.omf-rest__card {
+  position: relative;
 }
 .omf-rest__img {
   display: flex;

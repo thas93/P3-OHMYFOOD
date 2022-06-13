@@ -21,8 +21,31 @@
         flex-wrap: wrap;
        justify-content: space-between;
         width: 100%;
-
        }       
+    }
+    &__card-div{
+        @media screen and (min-width: 992px) {
+            width:140%;
+            flex-direction: row;
+            flex-wrap: wrap;    
+         } 
+             
+        
+    }
+
+    &__badge{
+        position:absolute;
+        right:10px; top:15px; 
+        background-color: $color3;
+        color: darken($color3, 35%);
+        font-weight: 500;
+        font-size: 20px;
+        padding: 7px 20px 7px 20px;      
+        border-radius: 5px;        
+    }
+
+    &__badge-p{       
+        margin: 0px;
     }
 
     &__restaurant {
@@ -32,6 +55,7 @@
 
     &__card {
         @extend .card;
+        position:relative;
        
     }
 
