@@ -57,14 +57,14 @@
     &__btn-a {
         @include center;
     }
+    
 
     &__btn {
         @include center;
         @include a;
         flex-direction: row;
         padding: 5px;
-        color: rgb(249, 246, 246);
-        font-size: large;
+        color: rgb(249, 246, 246);       
         font-weight: 500;
         padding: 15px;
         border-radius: 25px 25px 25px 25px;

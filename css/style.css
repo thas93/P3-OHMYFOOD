@@ -54,6 +54,7 @@ body {
   flex-direction: column;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.0705882353);
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .omf-nav__logo {
@@ -130,7 +131,6 @@ body {
   flex-direction: row;
   padding: 5px;
   color: rgb(249, 246, 246);
-  font-size: large;
   font-weight: 500;
   padding: 15px;
   border-radius: 25px 25px 25px 25px;
@@ -167,8 +167,9 @@ body {
 }
 @media screen and (min-width: 992px) {
   .omf-func__step {
+    display: flex;
     flex-direction: row;
-    grid-gap: 20px;
+    justify-content: space-between;
   }
 }
 .omf-func__icon:hover {
@@ -177,13 +178,29 @@ body {
 .omf-func__func-p {
   font-weight: 500;
 }
+@media screen and (min-width: 992px) {
+  .omf-func__select {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .omf-func__menu {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .omf-func__restaurant {
+    width: 30%;
+  }
+}
+
 .omf-rest {
   background-color: rgba(249, 245, 245, 0.9921568627);
   padding: 25px;
   margin-top: 30px;
   margin-bottom: 0px;
-  height: 1300px;
-  max-height: 2000px;
+  display: flex;
+  flex-direction: column;
 }
 .omf-rest__p {
   font-size: 30px;
@@ -191,12 +208,21 @@ body {
   margin-left: 30px;
 }
 .omf-rest__card-section {
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 992px) {
+  .omf-rest__card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .omf-rest__restaurant {
   text-decoration: none;
   color: black;
-  width: 100%;
 }
 .omf-rest__img {
   display: flex;
@@ -208,7 +234,6 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding: 0px;
-  text-align: center;
 }
 .omf-rest__card-description {
   display: flex;

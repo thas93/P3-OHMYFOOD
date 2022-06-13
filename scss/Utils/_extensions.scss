@@ -8,9 +8,7 @@
     box-shadow: 0px 10px 10px -7px rgba(159, 155, 155, 0.53);
     width: 100%;
     cursor: pointer;
-    
-    
-    }
+}
 
 .number {
     background-color: $color1;
@@ -24,8 +22,7 @@
 }
 
 .func-icon{
-color: rgba(164, 163, 163, 0.875);
-
+    color: rgba(164, 163, 163, 0.875);
 
 }
 
@@ -36,5 +33,7 @@ color: rgba(164, 163, 163, 0.875);
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 16px #00000012;
-    width: 100%;       
+    width: 100%; 
+    margin-bottom: 20px; 
+    
 }

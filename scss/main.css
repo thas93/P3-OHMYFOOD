@@ -69,6 +69,7 @@ body {
   -webkit-box-shadow: 0 0 16px #00000012;
           box-shadow: 0 0 16px #00000012;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .omf-nav__logo {
@@ -200,7 +201,6 @@ body {
           flex-direction: row;
   padding: 5px;
   color: #f9f6f6;
-  font-size: large;
   font-weight: 500;
   padding: 15px;
   border-radius: 25px 25px 25px 25px;
@@ -257,11 +257,16 @@ body {
 
 @media screen and (min-width: 992px) {
   .omf-func__step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    grid-gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -273,13 +278,36 @@ body {
   font-weight: 500;
 }
 
+@media screen and (min-width: 992px) {
+  .omf-func__select {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .omf-func__menu {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .omf-func__restaurant {
+    width: 30%;
+  }
+}
+
 .omf-rest {
   background-color: #f9f5f5fd;
   padding: 25px;
   margin-top: 30px;
   margin-bottom: 0px;
-  height: 1300px;
-  max-height: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .omf-rest__p {
@@ -289,13 +317,35 @@ body {
 }
 
 .omf-rest__card-section {
-  grid-gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (min-width: 992px) {
+  .omf-rest__card-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .omf-rest__restaurant {
   text-decoration: none;
   color: black;
-  width: 100%;
 }
 
 .omf-rest__img {
@@ -313,7 +363,6 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding: 0px;
-  text-align: center;
 }
 
 .omf-rest__card-description {

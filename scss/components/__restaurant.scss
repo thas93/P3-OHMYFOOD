@@ -1,36 +1,41 @@
-.omf-rest{
+.omf-rest {
     background-color: #f9f5f5fd;
     padding: 25px;
     margin-top: 30px;
-    margin-bottom: 0px;
-    height: 1300px;
-    max-height: 2000px;
-    
+    margin-bottom: 0px;  
+    display: flex;
+    flex-direction: column;
 
-    &__p{
+    &__p {
         font-size: 30px;
         font-weight: 700;
         margin-left: 30px;
     }
 
-    &__card-section{
-    grid-gap:20px;        
-    }
-
-    &__restaurant{
-        @include a;
+    &__card-section {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       @media screen and (min-width: 992px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: space-between;
         width: 100%;
+
+       }       
     }
 
-    &__card{
-       
+    &__restaurant {
+        @include a;
+    }
+
+
+    &__card {
         @extend .card;
-        
+       
     }
 
-   
-
-    &__img{
+    &__img {
         display: flex;
         justify-content: center;
         object-fit: cover;
@@ -40,41 +45,32 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         padding: 0px;
-        text-align: center;
-        
 
     }
 
-    &__card-description{
-
+    &__card-description {
         display: flex;
-        flex-direction:row ;
+        flex-direction: row;
     }
 
-    &__card-text{
-
+    &__card-text {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 15px;
-        
         width: 100%;
-
     }
 
-    &__rest-name{
-       
-        
+    &__rest-name {
         text-decoration: none;
         margin-bottom: 10px;
         margin-top: 0px;
         font-weight: 600;
-
     }
-    &__rest-loc{
+
+    &__rest-loc {
         text-decoration: none;
         margin-top: 0px;
-       
     }
 
 }
