@@ -48,44 +48,9 @@
         margin-bottom: 10px;
     }
   
-    &__p-btn {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        color: whitesmoke;
-    }
-
-    &__btn-a {
-        @include center;
-    }
     
 
-    &__btn {
-        @include center;
-        @include a;
-        flex-direction: row;
-        padding: 5px;
-        color: rgb(249, 246, 246);       
-        font-weight: 500;
-        padding: 15px;
-        border-radius: 25px 25px 25px 25px;
-        border: none;
-        background: linear-gradient(-20deg, $color1, $color2 95%);
-        box-shadow: 7px 10px 40px -7px rgba(84, 82, 82, 0.53);
-        cursor: pointer;
-
-        &:hover {
-            background: lighten($color1, 1%);
-            background: lighten($color2, 1%);
-            box-shadow: 7px 10px 40px -7px rgba(0, 0, 0, 0.53);
-            transition-duration: .35s;
-        }
-    }
-
 }
-
-
-
-
 
 .menu-nav{
 @include font;
