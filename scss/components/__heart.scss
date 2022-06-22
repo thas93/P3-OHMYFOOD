@@ -1,29 +1,27 @@
 
-.omf-rest{
-&__heart{
-    font-size: 28px;
-    
-}
-}
 
 
 
-.food-menu{
+
+.food-menu,.omf-rest {
 
     &__heart-icon{
         
         margin-right: 20px;
-        font-size: 60px;
-        -webkit-text-stroke: 2px black;
-       
-                    
+        font-size: 30px;
+        -webkit-text-stroke: 3px rgb(9, 8, 8);
+        color:  transparent;                           
     }
-    &__heart-icon::before{
-        content: '';
+    &__heart-icon:hover{
+        top: 30px;
         -webkit-text-stroke: 0px;
         background: -webkit-linear-gradient(-20deg, $color1, $color2 95%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition-property: transform;
+        transition-timing-function:ease-in;
+        transform: scale(1.05);
+        transition-duration: .5s;
         
         
     }
