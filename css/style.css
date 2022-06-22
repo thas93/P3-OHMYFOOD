@@ -69,6 +69,18 @@ body {
   border-radius: 20px;
 }
 
+.omf-loader {
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.omf-loader__round {
+  background-color: #16a085;
+  height: 100%;
+  width: 100%;
+}
+
 .omf-nav__logo {
   display: flex;
   justify-content: center;
@@ -289,17 +301,16 @@ body {
   font-size: 30px;
   -webkit-text-stroke: 3px rgb(9, 8, 8);
   color: transparent;
+  transform: scale(1);
+  transition: transform 400ms;
+  transition-timing-function: ease-in-out;
 }
 .food-menu__heart-icon:hover, .omf-rest__heart-icon:hover {
-  top: 30px;
-  -webkit-text-stroke: 0px;
   background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA 95%);
+  background-clip: border-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition-property: transform;
-  transition-timing-function: ease-in;
+  -webkit-text-stroke: 0px;
   transform: scale(1.05);
-  transition-duration: 0.5s;
 }
 
 .omf-rest {
@@ -324,8 +335,6 @@ body {
   .omf-rest__card-section {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -344,7 +353,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   .omf-rest__card {
-    width: 150%;
+    width: 100%;
   }
 }
 .omf-rest__img {
@@ -357,6 +366,11 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding: 0px;
+}
+@media screen and (min-width: 992px) {
+  .omf-rest__img {
+    width: 190%;
+  }
 }
 .omf-rest__card-description {
   display: flex;

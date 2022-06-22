@@ -73,16 +73,27 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 992px) {
-  .card, .omf-rest__card {
-    width: 910px;
-  }
-}
-
 .menu-card, .food-menu__card {
   background-color: white;
   padding: 15px;
   border-radius: 20px;
+}
+
+.omf-loader {
+  font-size: 40px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.omf-loader__round {
+  background-color: #16a085;
+  height: 100%;
+  width: 100%;
 }
 
 .omf-nav__logo {
@@ -426,24 +437,23 @@ body {
   font-size: 30px;
   -webkit-text-stroke: 3px #090808;
   color: transparent;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .food-menu__heart-icon:hover, .omf-rest__heart-icon:hover {
-  top: 30px;
-  -webkit-text-stroke: 0px;
   background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA 95%);
+  background-clip: border-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
+  -webkit-text-stroke: 0px;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
 }
 
 .omf-rest {
@@ -486,10 +496,6 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 100%;
   }
 }
 
@@ -518,7 +524,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .omf-rest__card {
-    width: 150%;
+    width: 100%;
   }
 }
 
@@ -537,6 +543,12 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .omf-rest__img {
+    width: 190%;
+  }
 }
 
 .omf-rest__card-description {

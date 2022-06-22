@@ -17,15 +17,16 @@
        @media screen and (min-width: 992px) {
         flex-direction: row;
         flex-wrap: wrap;        
-        justify-content: flex-start;
-        width: 100%;
+      
+     
        }       
     }
     &__card-div{
         @media screen and (min-width: 992px) {
-            display: flex;
+        display: flex;
          flex-direction: row;
          flex-wrap: wrap;
+        
          }       
     }
     &__restaurant {
@@ -35,10 +36,11 @@
         @extend .card;
         position:relative;
         @media screen and (min-width: 992px) {
-         width: 150%;
+         width: 100%;
 
         }             
     }
+    
     &__img {
         display: flex;
         justify-content: center;
@@ -49,6 +51,10 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         padding: 0px;
+        @media screen and (min-width: 992px) {
+            width: 190%;
+   
+           }             
     }
     &__card-description {
         display: flex;
