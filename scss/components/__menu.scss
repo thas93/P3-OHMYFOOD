@@ -36,10 +36,7 @@
         font-size: 30px;
         font-weight: 500;
     }
-    &__heart{
-        padding-right: 10px;
-        font-size:30px ;
-    }
+
     &__responsive-div{
         @media screen and (min-width: 992px) {
             display:flex;
@@ -56,6 +53,8 @@
         width: 50px;
         border: 2px solid $color3;
         margin-top: 4px; }   
+    
+    
     &__main-div{
         display: flex;
         flex-direction: column;
@@ -67,11 +66,14 @@
     }
     &__card{
         @extend .menu-card;
+        cursor: pointer;
+       
     }
     &__card-title{
         margin: 0px;
         margin-bottom: 5px;        
     }
+
     &__card-detail{
         display: flex;
         justify-content: space-between;                

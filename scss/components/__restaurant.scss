@@ -5,61 +5,40 @@
     margin-bottom: 0px;  
     display: flex;
     flex-direction: column;
-
     &__p {
         font-size: 30px;
         font-weight: 700;
         margin-left: 30px;
     }
-
     &__card-section {
        display: flex;
        flex-direction: column;
        justify-content: space-around;
        @media screen and (min-width: 992px) {
         flex-direction: row;
-        flex-wrap: wrap;
-        
-       justify-content: space-between;
+        flex-wrap: wrap;        
+        justify-content: flex-start;
         width: 100%;
        }       
     }
     &__card-div{
         @media screen and (min-width: 992px) {
-            width:140%;
-            flex-direction: row;
-            flex-wrap: wrap;    
-         } 
-             
-        
+            display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         }       
     }
-
-    &__badge{
-        position:absolute;
-        right:10px; top:15px; 
-        background-color: $color3;
-        color: darken($color3, 35%);
-        font-weight: 500;
-        font-size: 20px;
-        padding: 7px 20px 7px 20px;      
-        border-radius: 5px;        
-    }
-
-    &__badge-p{       
-        margin: 0px;
-    }
-
     &__restaurant {
         @include a;
     }
-
-
     &__card {
         @extend .card;
         position:relative;
-       
-    }
+        @media screen and (min-width: 992px) {
+         width: 150%;
 
+        }             
+    }
     &__img {
         display: flex;
         justify-content: center;
@@ -70,14 +49,11 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         padding: 0px;
-
     }
-
     &__card-description {
         display: flex;
         flex-direction: row;
     }
-
     &__card-text {
         display: flex;
         flex-direction: row;
@@ -85,7 +61,6 @@
         padding: 15px;
         width: 100%;
     }
-
     &__rest-name {
         text-decoration: none;
         margin-bottom: 10px;
@@ -93,9 +68,11 @@
         font-weight: 600;
     }
 
+    
     &__rest-loc {
         text-decoration: none;
         margin-top: 0px;
-    }
-
+    }    
+   
 }
+
