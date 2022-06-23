@@ -57,12 +57,6 @@ body {
   width: 100%;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 992px) {
-  .card, .omf-rest__card {
-    width: 910px;
-  }
-}
-
 .menu-card, .food-menu__card {
   background-color: white;
   padding: 15px;
@@ -335,13 +329,13 @@ body {
   .omf-rest__card-section {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
   .omf-rest__card-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 49%;
   }
 }
 .omf-rest__restaurant {
@@ -350,11 +344,6 @@ body {
 }
 .omf-rest__card {
   position: relative;
-}
-@media screen and (min-width: 992px) {
-  .omf-rest__card {
-    width: 100%;
-  }
 }
 .omf-rest__img {
   display: flex;
@@ -366,11 +355,6 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding: 0px;
-}
-@media screen and (min-width: 992px) {
-  .omf-rest__img {
-    width: 190%;
-  }
 }
 .omf-rest__card-description {
   display: flex;

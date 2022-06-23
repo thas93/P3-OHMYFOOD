@@ -496,20 +496,16 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 992px) {
   .omf-rest__card-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: 49%;
   }
 }
 
@@ -520,12 +516,6 @@ body {
 
 .omf-rest__card {
   position: relative;
-}
-
-@media screen and (min-width: 992px) {
-  .omf-rest__card {
-    width: 100%;
-  }
 }
 
 .omf-rest__img {
@@ -543,12 +533,6 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding: 0px;
-}
-
-@media screen and (min-width: 992px) {
-  .omf-rest__img {
-    width: 190%;
-  }
 }
 
 .omf-rest__card-description {
