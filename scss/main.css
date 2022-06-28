@@ -69,7 +69,6 @@ body {
           flex-direction: column;
   -webkit-box-shadow: 0 0 16px #00000012;
           box-shadow: 0 0 16px #00000012;
-  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -77,22 +76,6 @@ body {
   background-color: white;
   padding: 15px;
   border-radius: 20px;
-}
-
-.omf-loader {
-  font-size: 40px;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.omf-loader__round {
-  background-color: #16a085;
-  height: 100%;
   width: 100%;
 }
 
@@ -219,13 +202,13 @@ body {
   margin: 15px 0px 10px 0px;
 }
 
-.omf-nav__p-btn {
+.omf-info__p-btn {
   margin-top: 0px;
   margin-bottom: 0px;
   color: whitesmoke;
 }
 
-.omf-nav__btn-a {
+.omf-info__btn-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +222,7 @@ body {
       align-content: center;
 }
 
-.omf-nav__btn {
+.omf-info__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,7 +252,7 @@ body {
   cursor: pointer;
 }
 
-.omf-nav__btn:hover {
+.omf-info__btn:hover {
   background: #965add;
   background: #ff7edb;
   -webkit-box-shadow: 7px 10px 40px -7px rgba(0, 0, 0, 0.53);
@@ -572,9 +555,7 @@ body {
   margin-top: 0px;
 }
 
-@-webkit-keyframes animation-heart {}
-
-@keyframes animation-heart {}.menu-nav__arrow {
+.menu-nav__arrow {
   text-decoration: none;
   color: black;
 }
@@ -668,8 +649,69 @@ body {
   }
 }
 
+.food-menu__card-main-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.food-menu__card-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .food-menu__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   cursor: pointer;
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(17px);
+    transform: translateY(17px);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(17px);
+    transform: translateY(17px);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .food-menu__card-title {
@@ -692,6 +734,57 @@ body {
 
 .food-menu__card-price {
   font-weight: 700;
+  margin: 0px;
+}
+
+.food-menu__card-check-div {
+  background-color: #99E2D0;
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px 25px 25px 0px;
+  display: none;
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100);
+    transform: translateX(100);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100);
+    transform: translateX(100);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+
+.food-menu__card-check {
+  color: white;
+  font-size: 35px;
   margin: 0px;
 }
 

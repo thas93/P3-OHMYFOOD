@@ -63,18 +63,6 @@ body {
   border-radius: 20px;
 }
 
-.omf-loader {
-  font-size: 40px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-}
-.omf-loader__round {
-  background-color: #16a085;
-  height: 100%;
-  width: 100%;
-}
-
 .omf-nav__logo {
   display: flex;
   justify-content: center;
@@ -152,18 +140,18 @@ body {
   margin: 15px 0px 10px 0px;
 }
 
-.omf-nav__p-btn {
+.omf-info__p-btn {
   margin-top: 0px;
   margin-bottom: 0px;
   color: whitesmoke;
 }
-.omf-nav__btn-a {
+.omf-info__btn-a {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.omf-nav__btn {
+.omf-info__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +169,7 @@ body {
   box-shadow: 7px 10px 40px -7px rgba(84, 82, 82, 0.53);
   cursor: pointer;
 }
-.omf-nav__btn:hover {
+.omf-info__btn:hover {
   background: #965add;
   background: #ff7edb;
   box-shadow: 7px 10px 40px -7px rgba(0, 0, 0, 0.53);
@@ -378,7 +366,6 @@ body {
   margin-top: 0px;
 }
 
-@keyframes animation-heart {}
 .menu-nav__arrow {
   text-decoration: none;
   color: black;
@@ -448,8 +435,35 @@ body {
     width: 70%;
   }
 }
+.food-menu__card-main-div {
+  display: flex;
+  flex-direction: row;
+}
+.food-menu__card-div {
+  display: flex;
+  flex-direction: column;
+}
 .food-menu__card {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(17px);
+    transform: translateY(17px);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .food-menu__card-title {
   margin: 0px;
@@ -464,6 +478,36 @@ body {
 }
 .food-menu__card-price {
   font-weight: 700;
+  margin: 0px;
+}
+.food-menu__card-check-div {
+  background-color: #99E2D0;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px 25px 25px 0px;
+  display: none;
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100);
+    transform: translateX(100);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+.food-menu__card-check {
+  color: white;
+  font-size: 35px;
   margin: 0px;
 }
 
