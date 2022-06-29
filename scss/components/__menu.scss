@@ -72,12 +72,12 @@
     &__card-div{
         display: flex;
         flex-direction:column;
+        width: 100%;
+        padding: 7px 17px 7px 17px;
     }
     &__card{
         @extend .menu-card;
-        display: flex;
-        flex-direction:column;
-        cursor: pointer;     
+        overflow: hidden;   
         -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;        
           @keyframes slide-top {
@@ -94,63 +94,76 @@
                       transform: translateY(0px);
                       opacity:1;
             }
-          }
-                       
+          }  
+        &:hover{
+            .food-menu__card-check-div{
+                width: 100%;
+            }
+            
+        }                   
     }
     &__card-title{
         margin: 0px;
-        margin-bottom: 5px;        
+        text-overflow: "…";             
     }
-
     &__card-detail{
         display: flex;
-        justify-content: space-between;                
+        justify-content:space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+                               
     }
     &__card-description{
-        margin:0px
+        margin: 0px;
+        padding: 0px;
+        text-overflow: "…";
     }
     &__card-price{
         font-weight: 700;
-        margin:0px
+        
+       margin-left: auto;
+        padding: 0px;
     }
-
     &__card-check-div{
         background-color: $color3;
-        height: 100px;
-        width: 100px;
+        height: 100%;
         @include center;
-        padding: 0px;
-        margin: 0px;
-        border-radius: 0px 25px 25px 0px;
-        display: none;
-        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        border-radius: 0px 21px 21px 0px;
+        width: 0px;
+        transition: width 0.5s ease-in-out;
+        max-width: 95px;
         
-        
-        
-    }
-    &__card-check-div:hover{
-        @keyframes slide-left {
-            
-            0% {
-              -webkit-transform: translateX(100);
-                      transform: translateX(100);
-            }
-            100% {
-              -webkit-transform: translateX(-100px);
-                      transform: translateX(-100px);
-            }
-
-    }
+             
     }
     &__card-check{
        
         color: white;
         font-size: 35px;
         margin: 0px;
-        
-        
-        
+
+        -webkit-animation: rotate-center 1s ease-in-out both;
+	    animation: rotate-center 1s ease-in-out both;  
+            @-webkit-keyframes rotate-center {
+                0% {
+                  -webkit-transform: rotate(0);
+                          transform: rotate(0);
+                }
+                100% {
+                  -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                }
+              }
+              @keyframes rotate-center {
+                0% {
+                  -webkit-transform: rotate(0);
+                          transform: rotate(0);
+                }
+                100% {
+                  -webkit-transform: rotate(360deg);
+                          transform: rotate(360deg);
+                }
+              }        
     }
 }
 
