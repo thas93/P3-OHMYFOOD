@@ -74,71 +74,52 @@
         flex-direction:column;
         width: 100%;
         padding: 7px 17px 7px 17px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__card{
         @extend .menu-card;
         overflow: hidden;   
         -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-                
-          @keyframes slide-top {
-            0% {
-              -webkit-transform: translateY(17px);
-                      transform: translateY(17px);
-                      opacity:0;
-            }
-            90%{
-                opacity:0.5;
-            }
-            100% {
-              -webkit-transform: translateY(0px);
-                      transform: translateY(0px);
-                      opacity:1;
-            }
-          }  
+        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;               
+          
         &:hover{
             .food-menu__card-check-div{
                 width: 100%;
             }
-        
-            .food-menu__card-check{
-                
-	        animation: rotate-center 0.5s ease-in-out;
-                    
-                    
-                      @keyframes rotate-center {
-                        0% {
-                          
-                                  transform: rotate(-180deg);
-                        }
-                        
-                        100% {
-                        
-                                  transform: rotate(0deg);
-                        }
-                      }
-                      
-                              
-            }
-        
-            
+            .food-menu__card-check{                
+	        animation: rotate-center 0.5s ease-in-out;                                                                                                          
+            }            
         }                   
     }
 
     &__card-title{
-        margin: 0px;}
+        margin: 0px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+       
+        
+    }
       
     &__card-detail{
         display: flex;
         justify-content:space-between;
         align-items: center;
         margin: 0px;
-        padding: 0px;                          
+        padding: 0px;
+                             
     }
     &__card-description{
         margin: 0px;
-        padding: 0px;    
+        padding: 0px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+         
     }
     &__card-price{
         font-weight: 700;    
