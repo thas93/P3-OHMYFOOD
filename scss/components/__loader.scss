@@ -8,7 +8,14 @@
     @include center;
     animation: loadingSpinner 5s alternate;
     animation-iteration-count:1;
+    flex-direction: column;
+    grid-gap:100px;
     
+    &__title{
+        @include font;
+        font-size: 60px;
+        color: $color3;
+    }
     &__animation {
         width: 64px;
         height: 64px;
@@ -21,8 +28,8 @@
         background-repeat: no-repeat;
         background-size: 16px 16px;
         background-position: left top, left bottom, right top, right bottom;
-        animation: rotate 1.5s linear;
-        animation-iteration-count:2;
+        animation: rotate 5s linear;
+        animation-iteration-count:1;
     }
 
     @keyframes loadingSpinner {

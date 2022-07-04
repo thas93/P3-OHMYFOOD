@@ -79,7 +79,9 @@
         @extend .menu-card;
         overflow: hidden;   
         -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;        
+        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+                
           @keyframes slide-top {
             0% {
               -webkit-transform: translateY(17px);
@@ -99,30 +101,48 @@
             .food-menu__card-check-div{
                 width: 100%;
             }
+        
+            .food-menu__card-check{
+                
+	        animation: rotate-center 0.5s ease-in-out;
+                    
+                    
+                      @keyframes rotate-center {
+                        0% {
+                          
+                                  transform: rotate(-180deg);
+                        }
+                        
+                        100% {
+                        
+                                  transform: rotate(0deg);
+                        }
+                      }
+                      
+                              
+            }
+        
             
         }                   
     }
+
     &__card-title{
-        margin: 0px;
-        text-overflow: "…";             
-    }
+        margin: 0px;}
+      
     &__card-detail{
         display: flex;
         justify-content:space-between;
         align-items: center;
         margin: 0px;
-        padding: 0px;
-                               
+        padding: 0px;                          
     }
     &__card-description{
         margin: 0px;
-        padding: 0px;
-        text-overflow: "…";
+        padding: 0px;    
     }
     &__card-price{
-        font-weight: 700;
-        
-       margin-left: auto;
+        font-weight: 700;    
+        margin-left: auto;
         padding: 0px;
     }
     &__card-check-div{
@@ -142,28 +162,7 @@
         font-size: 35px;
         margin: 0px;
 
-        -webkit-animation: rotate-center 1s ease-in-out both;
-	    animation: rotate-center 1s ease-in-out both;  
-            @-webkit-keyframes rotate-center {
-                0% {
-                  -webkit-transform: rotate(0);
-                          transform: rotate(0);
-                }
-                100% {
-                  -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                }
-              }
-              @keyframes rotate-center {
-                0% {
-                  -webkit-transform: rotate(0);
-                          transform: rotate(0);
-                }
-                100% {
-                  -webkit-transform: rotate(360deg);
-                          transform: rotate(360deg);
-                }
-              }        
+            
     }
 }
 
