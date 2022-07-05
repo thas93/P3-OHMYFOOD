@@ -6,13 +6,11 @@
         box-shadow: 0px 2px 3px 0PX rgba(203, 202, 202, 0.79);
         margin: 0px;
         padding: 10px;
-
     }
 
     &__location {
         @include center;
         background-color: rgba(228, 221, 221, 0.669);
-
     }
 
     &__loc-icon {
@@ -46,10 +44,7 @@
     &__p2 {
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-  
-    
-
+    }   
 }
 
 .menu-nav{
@@ -66,14 +61,11 @@
     }       
   
     &__arrow{
-
         margin-left: 30px;
-        margin-right: 70px;
-        
+        margin-right: 70px;        
     }
 
     &__logo{
-
         margin:15px 0px 10px 0px;
     }
    

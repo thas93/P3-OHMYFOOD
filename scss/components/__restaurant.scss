@@ -10,6 +10,7 @@
         font-weight: 700;
         margin-left: 30px;
     }
+
     &__card-section {
        display: flex;
        flex-direction: column;
@@ -21,20 +22,24 @@
         width: 100%;    
        }       
     }
+
     &__card-div{       
         @media screen and (min-width: 992px) {       
             width: 49%;        
          }       
     }
+
     &__restaurant {
         @include a;        
     }
+
     &__card {
         @extend .card;
         position:relative;
         @media screen and (min-width: 992px) {           
         }             
-    }      
+    } 
+
     &__img {
         display: flex;
         justify-content: center;
@@ -46,10 +51,12 @@
         border-top-right-radius: 25px;
         padding: 0px;                   
     }
+
     &__card-description {
         display: flex;
         flex-direction: row;
     }
+
     &__card-text {
         display: flex;
         flex-direction: row;
@@ -57,12 +64,14 @@
         padding: 15px;
         width: 100%;
     }
+
     &__rest-name {
         text-decoration: none;
         margin-bottom: 10px;
         margin-top: 0px;
         font-weight: 600;
-    }   
+    }
+       
     &__rest-loc {
         text-decoration: none;
         margin-top: 0px;

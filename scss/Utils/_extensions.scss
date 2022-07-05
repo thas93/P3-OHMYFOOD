@@ -23,7 +23,6 @@
 
 .func-icon{
     color: rgba(164, 163, 163, 0.875);
-
 }
 
 .card{
@@ -32,13 +31,8 @@
     height: 265px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 16px #00000012;
-   
+    box-shadow: 0 0 16px #00000012;   
     margin-bottom: 20px; 
-    @media screen and (min-width: 992px) {
-        
-       
-       }      
 }
 
 .menu-card{

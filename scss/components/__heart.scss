@@ -4,9 +4,8 @@
 
 
 .food-menu,.omf-rest {
-
-    &__heart-icon{
-        
+    
+    &__heart-icon{        
         margin-right: 20px;
         font-size: 30px;
         -webkit-text-stroke: 3px rgb(9, 8, 8);
@@ -15,20 +14,12 @@
         transition: transform 1s;
         transition-timing-function:ease-in-out;                       
     }
+    
     &__heart-icon:hover{
         background: -webkit-linear-gradient(-20deg, $color1, $color2 95%);
         background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-stroke: 0px;
-        transform: scale(1.05);
-        
-        
-        
-    }
-
-
-   
-    
-
-    
+        transform: scale(1.05);                        
+    }    
 }

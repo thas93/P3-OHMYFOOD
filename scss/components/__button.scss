@@ -1,12 +1,15 @@
 .omf-info {
-&__p-btn {
+
+    &__p-btn {
     margin-top: 0px;
     margin-bottom: 0px;
     color: whitesmoke;
 }
+
 &__btn-a {
     @include center;
 }
+
 &__btn {
     @include center;
     @include a;
@@ -38,10 +41,12 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
     &__btn-a {
         @include center;
         margin-top: 50px
     }
+    
     &__btn {
         @include center;
         @include a;

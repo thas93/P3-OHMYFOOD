@@ -43,32 +43,35 @@
             grid-gap:20px;                                                   
              }
     }
+
     &__main-title{
         font-size: 20px;
         margin: 0px;                    
     }
+
     &__main-title:after {
         content: '';
         display: flex;     
         width: 50px;
         border: 2px solid $color3;
         margin-top: 4px; }   
-    
-    
+   
     &__main-div{
         display: flex;
         flex-direction: column;
         grid-gap:15px;
         margin-bottom: 20px;
-    
+
        @media screen and (min-width: 992px) {      
         width: 70%;                                                       
-         }
+        }
     }
+
     &__card-main-div{
         display: flex;
         flex-direction:row;
     }
+
     &__card-div{
         display: flex;
         flex-direction:column;
@@ -78,12 +81,12 @@
         text-overflow: ellipsis;
         overflow: hidden;
     }
+
     &__card{
         @extend .menu-card;
         overflow: hidden;   
         -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;               
-          
+        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;                      
         &:hover{
             .food-menu__card-check-div{
                 width: 100%;
@@ -96,36 +99,33 @@
 
     &__card-title{
         margin: 0px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        margin-bottom: 15px;
         overflow: hidden;
-       
-        
+        white-space: nowrap;
+        text-overflow: ellipsis;                          
     }
       
     &__card-detail{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        margin: 0px;
-        padding: 0px;
-                             
+        height: 20px;                                 
     }
+
     &__card-description{
         margin: 0px;
         padding: 0px;
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow: hidden;
-         
+        overflow: hidden;         
     }
+
     &__card-price{
         font-weight: 700;    
         margin-left: auto;
         padding: 0px;
     }
+    
     &__card-check-div{
         background-color: $color3;
         height: 100%;
@@ -133,17 +133,13 @@
         border-radius: 0px 21px 21px 0px;
         width: 0px;
         transition: width 0.5s ease-in-out;
-        max-width: 95px;
-        
-             
+        max-width: 95px;                  
     }
-    &__card-check{
-       
+
+    &__card-check{      
         color: white;
         font-size: 35px;
-        margin: 0px;
-
-            
+        margin: 0px;           
     }
 }
 
